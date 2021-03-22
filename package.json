@@ -30,8 +30,8 @@
     "react-dom": "^16.13.1",
     "react-modal": "^3.11.2",
     "react-redux": "^7.2.0",
-    "react-router": "^4.4.0-beta.6",
-    "react-router-dom": "^4.4.0-beta.6",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
@@ -48,11 +48,11 @@
   },
   "private": true,
   "scripts": {
-    "build": "webpack --mode production",
+    "build": "node init && webpack --mode production",
     "eject": "react-scripts eject",
     "fix-lint": "tslint --fix --project .",
     "generate:emoji": "node generate-emoji-shortcodes.js",
-    "start": "webpack-dev-server --mode development --open --history-api-fallback",
+    "start": "node init && webpack-dev-server --mode development --open --history-api-fallback",
     "test": "react-scripts test"
   },
   "prettier": {
